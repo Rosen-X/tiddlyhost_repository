@@ -1,0 +1,9 @@
+[[redirects]]
+from = "/*"  # 匹配Netlify站点下所有请求
+to = "https://rosen666.tiddlyhost.com/:splat"  # 转发到目标Tiddlyhost，:splat捕获请求路径并传递
+status = 200  # 200状态码实现隐式代理，不改变浏览器地址栏
+force = true  # 强制执行该代理规则，优先级最高
+headers = {
+  "Access-Control-Allow-Origin" = "*",  # 解决跨域问题
+  "Cache-Control" = "public, max-age=3600"  # 缓存静态资源1小时，提升二次访问速度
+}
