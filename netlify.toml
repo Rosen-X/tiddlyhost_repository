@@ -9,7 +9,5 @@ to = "https://rosen666.tiddlyhost.com.tiddlyhost.com/:splat"
 status = 200
 # 强制执行该代理规则，优先级最高
 force = true
-# 配置响应头：解决跨域问题
-headers.Access-Control-Allow-Origin = "*"
-# 配置响应头：缓存静态资源1小时，提升二次访问速度
-headers.Cache-Control = "public, max-age=3600"
+
+
