@@ -4,10 +4,11 @@
 # 匹配Netlify站点下的所有请求路径
 from = "/*"
 # 替换下面的链接为你实际的Tiddlyhost站点地址（例如：https://mynotes.tiddlyhost.com/:splat）
-to = "https://rosen666.tiddlyhost.com.tiddlyhost.com/:splat"
+to = "https://rosen666.tiddlyhost.com/:splat"
 # 200状态码实现隐式代理（浏览器地址栏不跳转）
 status = 200
 # 强制执行该代理规则，优先级最高
 force = true
+
 
 
